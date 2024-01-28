@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* HEADER SECTION */
+header {
+    min-height: 100vh;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+    color: #fff;
+}
+nav img { 
+    background-repeat: no-repeat; 
+    width: 100px; 
+    height: 100px; 
+    display: block; 
+    text-indent: -9999px;
+}
+nav .fa {
+    display: none;
+}
+.nav-links {
+    flex: 1;
+    text-align: center;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li::after {
+    content: '';
+    transition: .5s;
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 45px;
+}
+.text-box p{
+    margin: 10px 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+/* DEGREES  SECTION*/
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course iframe {
+    width: 100%;
+}
+h1 {
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-weight: 600;
+}
+p {
+    color: #777;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transform: .5s;
+}
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+/* CAMPUS SECTION */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+.layer {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+}
+.layer:hover {
+    background-color: rgba(226, 0, 0, 0.7);
+}
+.layer h2 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+.layer:hover h2 {
+    opacity: 1;
+    bottom: 49%;
+}
+
+/* FACILITIES */
+.facilities {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col {
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align-last: left;
+}
+.facilities-col img {
+    width: 100%;
+    border-radius: 10px;
+} 
+.facilities-col p {
+    padding: 0;
+}
+.facilities-col h3 {
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+ 
+/* CALL TO ACTION */
+.call {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner2.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 50px 0; 
+}
+.call h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: hsl(0, 0%, 98%);
+}
+footer h1 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icons div {
+    display: flex;
+    gap: 1rem;
+}
+.icons img {
+    cursor: pointer;
+}
+.icons div img:hover {
+    filter: brightness(0);
+}
+
+.links {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    text-transform: uppercase;
+}
+.column .column-title {
+    margin-bottom: 1rem;
+    color: #f44336;
+}
+.column p {
+    font-weight: 700;
+    cursor: pointer;
+}
+.column p:hover {
+    text-decoration: underline;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+     color: #f44336; 
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #393636;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease-out;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 4.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }  
+
+  
+
+/* RESPONSIVENESS */
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links ul{
+        padding: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    nav .fa {
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .call h1 {
+        font-size: 24px;
+    }
+    .icons {
+        flex-direction: column;
+        gap: 2rem;
+        padding-inline: 2rem;
+    }
+    .links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+}
